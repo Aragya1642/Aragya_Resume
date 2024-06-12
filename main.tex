@@ -67,12 +67,11 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-% TODO: Spacing on /begin{tabular*} is off and does not match everything
 \newcommand{\educationSubheading}[5]{
-  \vspace{-1pt}
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \quad\textit{#3}\textbf{#4} & \textit{#5} \\
+      \textit{#3}\textbf{#4} & \textit{#5} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -100,11 +99,12 @@
 
 %-----------EDUCATION-----------------
 \section{Education}
+      \resumeSubHeadingListStart
         \educationSubheading
             {University of Pittsburgh}{Pittsburgh, PA}
             {B.S. - Computer Engineering (Autonomous Systems Focus); }{GPA: 3.99}{August 2022 - April 2026}
             % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
-
+      \resumeSubHeadingListEnd
 %-----------SKILLS-----------------
 \section{Skills}
 	\resumeSubHeadingListStart
@@ -131,9 +131,9 @@
             {Society of Astronautics and Rocketry}{Pittsburgh, PA}
             {Chief Engineer (Student Led Organization)}{August 2022 -  Present}
             \resumeItemListStart
-                \resumeItem{Project Course - Find Movie Similarity from Plot Summaries}
+                \resumeItem{Full Rover Integration}
                     {Created project based course using Unsupervised learning and natural language processing.}
-                \resumeItem{Tutorial - Introduction to Reinforcement Learning}
+                \resumeItem{Robotic Hand}
                     {Created tutorial for Q-learning RL algorithm and  concepts.}
             \resumeItemListEnd
 \vspace{4pt}
@@ -212,17 +212,17 @@
 \end{description}
 \vspace{-5pt}
 
-% %-----------VOLUNTEER EXPERIENCE-----------------
-% \section{Volunteer Experience}
-%   \resumeSubHeadingListStart
-%     \resumeSubheading
-%       {Community Lead at Developer Student Clubs NSEC}{Kolkata, India}
-%       {Conducted online and offline technical \& soft-skills training impacting over 3000 students.}{Jan 2019 - Present}
-%     \resumeSubheading
-%       {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}
-%       {Organized events, conducted workshops and delivered workshops reaching over 7000 developers.}{Jan 2018 - Present}
-%   \resumeSubHeadingListEnd
-% \vspace{-5pt}
+%-----------VOLUNTEER EXPERIENCE-----------------
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Community Lead at Developer Student Clubs NSEC}{Kolkata, India}
+      {Conducted online and offline technical \& soft-skills training impacting over 3000 students.}{Jan 2019 - Present}
+    \resumeSubheading
+      {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}
+      {Organized events, conducted workshops and delivered workshops reaching over 7000 developers.}{Jan 2018 - Present}
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
 
 % %-----------PUBLICATIONS-----------------
 % \section{Publications}

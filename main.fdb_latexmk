@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1718160401.38578 "c:/Users/agoya/Documents/Aragya_Goyal_Resume/Aragya_Resume/main.tex" "main.pdf" "main" 1718160403.42569 0
-  "C:/Users/agoya/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1718070506 82039 32c00b46ec68f3ddea0147d75839907f ""
+["pdflatex"] 1718168371.99285 "c:/Users/agoya/Documents/Aragya_Goyal_Resume/Aragya_Resume/main.tex" "main.pdf" "main" 1718168372.55902 0
+  "C:/Users/agoya/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1718166783 82039 32c00b46ec68f3ddea0147d75839907f ""
   "C:/Users/agoya/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk" 1718073317 10472 7766e7144c4b5cbf1078f8aee8d223d4 ""
   "C:/Users/agoya/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1718073318 11548 76adb913fd5f4f0edd301ef92c1ece4b ""
   "C:/Users/agoya/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1718068576 24263122 4306c975004d449afb06853f25268a28 ""
@@ -77,10 +77,10 @@
   "C:/Users/agoya/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "C:/Users/agoya/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1700599895 7500 db31c3d04f8bc9010e47a5efbbace9ff ""
   "C:/Users/agoya/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/agoya/Documents/Aragya_Goyal_Resume/Aragya_Resume/main.tex" 1718160398 8750 712688816c3d4a5d9f08c636af608a42 ""
-  "main.aux" 1718160403 932 b087ae6d42576daeda9cad7a4b8bcf51 "pdflatex"
-  "main.out" 1718160403 768 f5bfd462008366b17405913b20c72422 "pdflatex"
-  "main.tex" 1718160398 8750 712688816c3d4a5d9f08c636af608a42 ""
+  "c:/Users/agoya/Documents/Aragya_Goyal_Resume/Aragya_Resume/main.tex" 1718168370 10804 17187bb70611152e1c68588552a454d9 ""
+  "main.aux" 1718168372 716 e7a4e9f4ef99baebc41597a8a13ae95f "pdflatex"
+  "main.out" 1718168372 572 8f9c8e9d0a141f517208c0652e4f13f0 "pdflatex"
+  "main.tex" 1718168370 10804 17187bb70611152e1c68588552a454d9 ""
   (generated)
   "main.aux"
   "main.log"

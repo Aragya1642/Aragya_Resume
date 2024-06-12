@@ -6,7 +6,7 @@
 % Original Template: https://www.overleaf.com/latex/templates/resume-template-by-anubhav/dhmkrwtksdgy
 %------------------------
 
-\documentclass[a4paper,20pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -64,9 +64,10 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+% TODO: Spacing on /begin{tabular*} is off and does not match everything
 \newcommand{\educationSubheading}[5]{
   \vspace{-1pt}
-    \begin{tabular*}{1.00\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \quad\textit{#3}\textbf{#4} & \textit{#5} \\
     \end{tabular*}\vspace{-5pt}
@@ -84,7 +85,6 @@
 
 %-----------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%
-
 \begin{document}
 
 %----------HEADING-----------------
@@ -105,32 +105,18 @@
 %-----------SKILLS-----------------
 \section{Skills}
 	\resumeSubHeadingListStart
-        \resumeSubItem{Languages}{~~~~~~Python, PHP, C++, JavaScript, SQL, Bash, JAVA}
-        \resumeSubItem{Frameworks}{~~~~Scikit, NLTK, SpaCy, TensorFlow, Keras, Django, Flask, NodeJS, LAMP}
-        \resumeSubItem{Tools}{~~~~~~~~~~~~~~GIT}
-        \resumeSubItem{Platforms}{~~~~~~~Linux, Web, Windows, Arduino, Raspberry, AWS, GCP, Alibaba Cloud, IBM Cloud}
-        \resumeSubItem{Soft Skills}{~~~~~~~Leadership, Event Management, Writing, Public Speaking, Time Management}
+        \resumeSubItem{Languages}{~~~~~~Python, C++, ARM Assembly} % C, VHDL
+        \resumeSubItem{Technologies}{~~~Linux, ROS, Github, Solidworks, MATLAB, Microsoft Products, Arduino, Raspberry Pi, OpenCV} % CVAT, FPGA, Google Colab
+        \resumeSubItem{Manufacturing}{Milling, Soldering, Laser Cutting, General Shop Tools}
     \resumeSubHeadingListEnd
 \vspace{-5pt}
 
 %-----------RELEVANT EXPERIENCE-----------------
-%TODO: Some weird spacing issues exist here - need to trace and eliminate
 \section{Relevant Experience}
     \resumeSubHeadingListStart
         \resumeSubheading
-            {Carnegie Mellon University - Robotics Institute}{Pittsburgh, PA}
-            {Undergraduate Researcher (Part-time, Summer Internship)}{April 2023 - Present}
-            \resumeItemListStart
-                \resumeItem{Discussion Forum Upgrades}
-                    {Refactor forum for performance to handle large databases.}
-                \resumeItem{REST API for Discussion Forum}
-                    {Symphony \& Twig based Forum parts converted to API-first interface.}
-                \resumeItem{Ratchet PHP WebSocket}{Implemented a WebSocket for low-latency real time exchange of posts and thread updates.}
-            \resumeItemListEnd
-\vspace{-5pt}
-        \resumeSubheading
-            {Society of Astronautics and Rocketry}{Remote}
-            {Chief Engineer (Student Club)}{August 2022 -  Present}
+            {Carnegie Mellon University - Robotics Institute (Biorobotics Lab)}{Pittsburgh, PA}
+            {Undergraduate Researcher (Part-Time)}{April 2023 -  Present}
             \resumeItemListStart
                 \resumeItem{Project Course - Find Movie Similarity from Plot Summaries}
                     {Created project based course using Unsupervised learning and natural language processing.}
@@ -138,33 +124,76 @@
                     {Created tutorial for Q-learning RL algorithm and  concepts.}
                 \resumeItem{Impact}{Course has been taken by 250+ students so far with 4.65 average rating.}
             \resumeItemListEnd
+\vspace{4pt}
+        \resumeSubheading
+            {Society of Astronautics and Rocketry}{Pittsburgh, PA}
+            {Chief Engineer (Student Led Organization)}{August 2022 -  Present}
+            \resumeItemListStart
+                \resumeItem{Project Course - Find Movie Similarity from Plot Summaries}
+                    {Created project based course using Unsupervised learning and natural language processing.}
+                \resumeItem{Tutorial - Introduction to Reinforcement Learning}
+                    {Created tutorial for Q-learning RL algorithm and  concepts.}
+            \resumeItemListEnd
+\vspace{4pt}
+        \resumeSubheading
+            {Formula SAE - Panther Racing}{Pittsburgh, PA}
+            {R\&D Engineer (Student Led Organization)}{August 2022 -  March 2024}
+            \resumeItemListStart
+                \resumeItem{Project Course - Find Movie Similarity from Plot Summaries}
+                    {Created project based course using Unsupervised learning and natural language processing.}
+                \resumeItem{Tutorial - Introduction to Reinforcement Learning}
+                    {Created tutorial for Q-learning RL algorithm and  concepts.}
+            \resumeItemListEnd
+\vspace{4pt}
+        \resumeSubheading
+            % TODO: Call it Part-Time or Volunteer??
+            {UPMC - Laboratory of Ocular Biomechanics}{Pittsburgh, PA}
+            {Undergraduate Researcher (Volunteer)}{January 2023 -  May 2023}
+            \resumeItemListStart
+                \resumeItem{Project Course - Find Movie Similarity from Plot Summaries}
+                    {Created project based course using Unsupervised learning and natural language processing.}
+                \resumeItem{Tutorial - Introduction to Reinforcement Learning}
+                    {Created tutorial for Q-learning RL algorithm and  concepts.}
+            \resumeItemListEnd
+\vspace{4pt}
+        \resumeSubheading
+            {FIRST Robotics}{Exton, PA}
+            {Undergraduate Researcher (Volunteer)}{January 2023 -  May 2023}
+            \resumeItemListStart
+                \resumeItem{Project Course - Find Movie Similarity from Plot Summaries}
+                    {Created project based course using Unsupervised learning and natural language processing.}
+                \resumeItem{Tutorial - Introduction to Reinforcement Learning}
+                    {Created tutorial for Q-learning RL algorithm and  concepts.}
+            \resumeItemListEnd
+\vspace{4pt}
+        \resumeSubheading
+            {VEX Robotics}{Royersford, PA}
+            {Undergraduate Researcher (Volunteer)}{January 2023 -  May 2023}
+            \resumeItemListStart
+                \resumeItem{Project Course - Find Movie Similarity from Plot Summaries}
+                    {Created project based course using Unsupervised learning and natural language processing.}
+                \resumeItem{Tutorial - Introduction to Reinforcement Learning}
+                    {Created tutorial for Q-learning RL algorithm and  concepts.}
+            \resumeItemListEnd
     \resumeSubHeadingListEnd
-  \vspace{-5pt}
-
-%-----------PROJECTS-----------------
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeSubItem{Vison - multimedia search engine (NLP, Search Engine, Web Crawlers, Multimedia Processing)}{(Work in progress) Research oriented, open source, search engine for bringing reverse multimedia search to small \& mid scale enterprises. Tech: Python, NodeJS, Intel OpenVino Toolkit, Selenium, TensorFlow (October '18)}
-\vspace{2pt}
-\resumeSubItem{Reinforcement Learning based Traffic Control System (Reinforcement Learning, Computer Vision)}{AI model to resolve city traffic around 50\%
-faster. Tech: Python, Alibaba Cloud, Raspberry Pi, Arduino, SUMO \& OpenCV. (August '18)}
-\vspace{2pt}
-\resumeSubItem{Panorama from Satellite Imagery using Distributed Computing (Distributed Computing, Image Processing)}{Images clicked using drones, provided by ISRO were stitched together using distributed public compute nodes, effectively bringing down processing time exponentially. Tech: PHP, C++, Java, Python (March '18)}
-\vspace{2pt}
-\resumeSubItem{Drag-n-drop machine learning learning environment (Web Development, Machine Learning)}{Scratch like tool for implementing machine learning pipelines along with built in tutorial for each concept. Tech: Python, JavaScript (September '18)}
-\vspace{2pt}
-\resumeSubItem{Search Engine and Social Network(Web Development, Web Crawler, Search)}{Created from scratch a social network and a search engine based on the idea of integrating Facebook and Google. The launched website was among top 1000 websites in India during 2012-2013. Tech: PHP, MySQL, HTML, CSS, WebSockets, JavaScript, RSS, XML ( May '12)}
-\resumeSubHeadingListEnd
 \vspace{-5pt}
-\section{Publications}
-\resumeSubHeadingListStart
-\resumeSubItem{Book: Deep Learning on Web (Web Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Django, Python, AWS, GCP, Azure (November '18)}
+
+%-----------TECHNICAL PROJECTS-----------------
+\section{Technical Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Vison - multimedia search engine (NLP, Search Engine, Web Crawlers, Multimedia Processing)}{(Work in progress) Research oriented, open source, search engine for bringing reverse multimedia search to small \& mid scale enterprises. Tech: Python, NodeJS, Intel OpenVino Toolkit, Selenium, TensorFlow (October '18)}
 \vspace{2pt}
-\resumeSubItem{Book: Deep Learning on Mobile Devices (Flutter App Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Flutter, Android, Firebase, TensorFlow, Python, Dart (December '18)}
-\resumeSubHeadingListEnd
+    \resumeSubItem{Reinforcement Learning based Traffic Control System (Reinforcement Learning, Computer Vision)}{AI model to resolve city traffic around 50\%
+    faster. Tech: Python, Alibaba Cloud, Raspberry Pi, Arduino, SUMO \& OpenCV. (August '18)}
+\vspace{2pt}
+    \resumeSubItem{Panorama from Satellite Imagery using Distributed Computing (Distributed Computing, Image Processing)}{Images clicked using drones, provided by ISRO were stitched together using distributed public compute nodes, effectively bringing down processing time exponentially. Tech: PHP, C++, Java, Python (March '18)}
+\vspace{2pt}
+    \resumeSubItem{Drag-n-drop machine learning learning environment (Web Development, Machine Learning)}{Scratch like tool for implementing machine learning pipelines along with built in tutorial for each concept. Tech: Python, JavaScript (September '18)}
+  \resumeSubHeadingListEnd
 \vspace{-5pt}
 
 %-----------AWARDS-----------------
+% TODO: Put the dates on the left side to make it consistent
 \section{Honors and Awards}
 \begin{description}[font=$\bullet$]
 \item {Awarded title of Intel Software Innovator - May, 2019}
@@ -173,20 +202,28 @@ faster. Tech: Python, Alibaba Cloud, Raspberry Pi, Arduino, SUMO \& OpenCV. (Aug
 \vspace{-5pt}
 \item {Runner's Up at Facebook Developers Circle Hackathon - August, 2017}
 \end{description}
-
-%-----------VOLUNTEER EXPERIENCE-----------------
 \vspace{-5pt}
-\section{Volunteer Experience}
-  \resumeSubHeadingListStart
-	\resumeSubheading
-    {Community Lead at Developer Student Clubs NSEC}{Kolkata, India}
-    {Conducted online and offline technical \& soft-skills training impacting over 3000 students.}{Jan 2019 - Present}
-\vspace{5pt}
-    % \vspace{10pt}\textbf{\large{Community Experience}}
-    \resumeSubheading
-    {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}
-    {Organized events, conducted workshops and delivered workshops reaching over 7000 developers.}{Jan 2018 - Present}
 
-\resumeSubHeadingListEnd
+% %-----------VOLUNTEER EXPERIENCE-----------------
+% \section{Volunteer Experience}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Community Lead at Developer Student Clubs NSEC}{Kolkata, India}
+%       {Conducted online and offline technical \& soft-skills training impacting over 3000 students.}{Jan 2019 - Present}
+%     \resumeSubheading
+%       {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}
+%       {Organized events, conducted workshops and delivered workshops reaching over 7000 developers.}{Jan 2018 - Present}
+%   \resumeSubHeadingListEnd
+% \vspace{-5pt}
+
+% %-----------PUBLICATIONS-----------------
+% \section{Publications}
+% \resumeSubHeadingListStart
+% \resumeSubItem{Book: Deep Learning on Web (Web Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Django, Python, AWS, GCP, Azure (November '18)}
+% \vspace{2pt}
+% \resumeSubItem{Book: Deep Learning on Mobile Devices (Flutter App Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Flutter, Android, Firebase, TensorFlow, Python, Dart (December '18)}
+% \resumeSubHeadingListEnd
+% \vspace{-5pt}
+
 
 \end{document}

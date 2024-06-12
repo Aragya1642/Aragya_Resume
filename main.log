@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.10)  12 JUN 2024 01:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.12)  12 JUN 2024 11:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/agoya/Documents/Aragya_Goyal_Resume/Aragya_Resume/main.tex
-(c:/Users/agoya/Documents/Aragya_Goyal_Resume/Aragya_Resume/main.tex
+**c:/Users/agoya/Documents/GitHub/Aragya_Resume/main.tex
+(c:/Users/agoya/Documents/GitHub/Aragya_Resume/main.tex
 LaTeX2e <2024-06-01>
 L3 programming layer <2024-05-08>
 (C:\Users\agoya\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -190,6 +190,19 @@ Package: fancyhdr 2024/04/23 v4.2 Extensive control of page headers and footers
 \f@nch@O@erf=\skip62
 \f@nch@O@olf=\skip63
 \f@nch@O@orf=\skip64
+) (C:\Users\agoya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\agoya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\agoya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\agoya\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
 ) (C:\Users\agoya\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
@@ -197,55 +210,65 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
  (C:\Users\agoya\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count283
-\scratchdimen=\dimen152
+\scratchdimen=\dimen154
 \scratchbox=\box55
 \nofMPsegments=\count284
 \nofMParguments=\count285
 \everyMPshowfont=\toks23
 \MPscratchCnt=\count286
-\MPscratchDim=\dimen153
+\MPscratchDim=\dimen155
 \MPnumerator=\count287
 \makeMPintoPDFobject=\count288
 \everyMPtoPDFconversion=\toks24
-)
-Package hyperref Info: Link coloring OFF on input line 88.
+) (C:\Users\agoya\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\agoya\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring OFF on input line 91.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 92.
+(Font)              <7> on input line 95.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 92.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 92.
+(Font)              <5> on input line 95.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 95.
  (C:\Users\agoya\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 124.
+(Font)              <9> on input line 127.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 124.
+(Font)              <6> on input line 127.
+<Figures/Apple.png, id=35, 451.6875pt x 451.6875pt>
+File: Figures/Apple.png Graphic file (type png)
+<use Figures/Apple.png>
+Package pdftex.def Info: Figures/Apple.png  used on input line 238.
+(pdftex.def)             Requested size: 184.94495pt x 184.94495pt.
 
 
 
@@ -255,26 +278,33 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 
 [1
 
-{C:/Users/agoya/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (main.aux)
+{C:/Users/agoya/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 3.60004pt, for example:
+(fancyhdr)                \setlength{\footskip}{3.60004pt}.
+
+[2 <./Figures/Apple.png>] (main.aux)
  ***********
 LaTeX2e <2024-06-01>
 L3 programming layer <2024-05-08>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8F9C8E9D0A141F517208C0652E4F13F0;572.
+(rerunfilecheck)             Checksum: FCDE6F18CD9111770835813A4FCB20C1;731.
  ) 
 Here is how much of TeX's memory you used:
- 9570 strings out of 473938
- 148859 string characters out of 5727391
- 1960893 words of memory out of 5000000
- 32301 multiletter control sequences out of 15000+600000
+ 9916 strings out of 473938
+ 154923 string characters out of 5727391
+ 1956893 words of memory out of 5000000
+ 32626 multiletter control sequences out of 15000+600000
  562965 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,449b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,349b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\agoya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0900.pk> <C:\Users\agoya\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/agoya/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/agoya/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/agoya/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/agoya/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/agoya/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/agoya/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/agoya/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/agoya/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/agoya/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (1 page, 149406 bytes).
+Output written on main.pdf (2 pages, 156795 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 110 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
+ 54 words of extra memory for PDF output out of 10000 (max. 10000000)
 

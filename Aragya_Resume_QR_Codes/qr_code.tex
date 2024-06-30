@@ -86,6 +86,13 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\qrheader}[1]{
+  \begin{center}
+    \vspace{0.5cm}
+    \textbf{#1}
+    % \vspace{-0.5cm}
+  \end{center}
+}
 
 %-----------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%
@@ -93,7 +100,9 @@
 
 %-----------QR CODES-----------------
 \section{Portfolio Quick Access}
+
   \begin{center}
+    \qrheader{CMU Research}
     \begin{minipage}{0.45\textwidth}
         \centering
         \includegraphics[width=6.5cm, height=6.5cm]{Figures/HUMRS.png}
@@ -107,9 +116,11 @@
         \captionof{figure}{Apple Recycling Video}
         \label{fig:image2}
     \end{minipage}
-    CMU Research
-    \vspace{0.5cm} % Space between rows
+    \vspace{0.1cm} % Space between rows
+  \end{center}
 
+  \begin{center}
+    \qrheader{Finished Projects}
     \begin{minipage}{0.45\textwidth}
         \centering
         \includegraphics[width=6.5cm, height=6.5cm]{Figures/STM32.png}
@@ -123,9 +134,11 @@
         \captionof{figure}{Custom Cane}
         \label{fig:image4}
     \end{minipage}
-    Finished Projects
-    \vspace{0.5cm} % Space between rows
-
+    \vspace{0.1cm} % Space between rows
+  \end{center}
+  
+  \begin{center}
+    \qrheader{High School Robotics}
     \begin{minipage}{0.45\textwidth}
         \centering
         \includegraphics[width=6.5cm, height=6.5cm]{Figures/DEWBOTXVII.png}
@@ -139,8 +152,6 @@
         \captionof{figure}{VEX Robotics}
         \label{fig:image6}
     \end{minipage}
-    High School Robotics
-
   \end{center}
 
 \end{document}

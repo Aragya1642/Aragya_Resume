@@ -56,7 +56,7 @@
 
 \newcommand{\resumeItemWithoutTitle}[1]{
   \item\small{
-    {\vspace{-2pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
@@ -89,6 +89,7 @@
     \setlength\itemsep{0mm}
 }
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\myLink}[1]{(\href{#1}{Link: #1})}
 
 %-----------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%
@@ -111,6 +112,17 @@
             {Data Structures and Algorithms, Embedded Processors, Microelectronics, Digital Circuits}
       \resumeSubHeadingListEnd
 
+%-----------SKILLS-----------------
+\section{Skills and Awards}
+	\resumeSubHeadingListStart
+        \resumeSubItem{Languages}{Python, C++, ARM Assembly} % C, VHDL
+        \resumeSubItem{Technologies}{Linux, ROS, Github, Solidworks, MATLAB, Microsoft Products, Arduino, Raspberry Pi, OpenCV} % CVAT, FPGA, Google Colab
+        \resumeSubItem{Manufacturing}{Milling, Soldering, Laser Cutting, General Shop Tools}
+        \resumeSubItem{General Awards}{Dean's Honor List (2021-Present), Honor List (2021-Present), Eagle Scout}
+        \resumeSubItem{Engineering Awards}{FSAE Innovation Award, FIRST Chairman's, FIRST Excellence in Engineering, FIRST Industrial Design Award, VEX Judges Award}
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+
 %-----------RELEVANT EXPERIENCE-----------------
 \section{Professional Experience}
     \resumeSubHeadingListStart
@@ -118,15 +130,13 @@
             {Carnegie Mellon University Robotics Institute (Biorobotics Lab)}{Pittsburgh, PA}
             {Undergraduate Research Intern (Part-Time)}{April 2023 -  Present}
             \resumeItemListStart
-                \resumeItem{Underwater Snake Robot}
-                    {\href{http://tinyurl.com/humrsCMU}{(Link: http://tinyurl.com/humrsCMU)}}
+                \resumeItem{Underwater Snake Robot}{\myLink{http://tinyurl.com/humrsCMU}}
                     \begin{itemize}
                       \item Implemented High-Frequency Injection methods in BLDC thrusters to achieve control at low/zero speeds.
                       \item Working to implement station-keeping feature using AprilTags, IMU readings, and Nested PID Controllers.
                       \item Conducted major repairs on the robot and assisted in continual maintenance of the robot.
                     \end{itemize}
-                \resumeItem{Apple's E-Waste Recycling Project}
-                    {\href{https://tinyurl.com/applecmu}{(Link: https://tinyurl.com/applecmu)}}
+                \resumeItem{Apple's E-Waste Recycling Project}{\myLink{https://tinyurl.com/applecmu}}
                     \begin{itemize}
                       \item Created large datasets for Machine Learning Models to detect screws in e-waste images.
                       \item Integrated ROS and Python packages to track ArucoTags using a Realsense camera for localization of robotic arm.
@@ -154,8 +164,8 @@
             {Society of Astronautics and Rocketry}{Pittsburgh, PA}
             {Chief Engineer (Student Led Organization)}{August 2022 -  Present}
             \resumeItemListStart
-              \item Leading a group of approx. 30 students to design and fabricate a rover to participate in the University Rover Challenge. \href{https://tinyurl.com/roverimages}{(Link: https://tinyurl.com/roverimages)}
-              \item Led the development of a prototype robotic hand using pneumatics. \href{https://tinyurl.com/hydraarm}{(Link: https://tinyurl.com/hydraarm)}
+              \resumeItemWithoutTitle {Leading a group of approx. 30 students to design and fabricate a rover to participate in the University Rover Challenge. \myLink{https://tinyurl.com/roverimages}}
+              \resumeItemWithoutTitle {Led the development of a prototype robotic hand using pneumatics. \myLink{https://tinyurl.com/hydraarm}}
             \resumeItemListEnd
 \vspace{4pt}
 %         \resumeSubheading
@@ -188,9 +198,12 @@
             {FIRST and VEX Robotics}{Exton \& Royersford, PA}
             {Team Captain/Design Lead (Student Led Organization)}{August 2018 -  June 2022}
             \resumeItemListStart
-              \item Designed six robots in \textbf{Solidworks} across four years. All robots qualified for higher level of competition including Worlds. \href{https://tinyurl.com/dewbot17}{(FIRST Link: https://tinyurl.com/dewbot17)}, \href{https://bit.ly/3w7a6b1}{(VEX Link: https://bit.ly/3w7a6b1)}
-              \item Mentored younger students about robot design and manufacturing through workshops and general building.
-              \item Won the VEX Judges Award, FIRST Excellence in Engineering Award, FIRST Industrial Design Award, and the FIRST Chairman's Award.
+              \resumeItemWithoutTitle {Designed six robots in \textbf{Solidworks} across four years. All robots qualified for higher level of competition including Worlds.}
+              % \begin{itemize}
+              %   \item resumeItemListStart
+              % \end{itemize}
+              \resumeItemWithoutTitle {Mentored younger students about robot design and manufacturing through workshops and general building.}
+              \resumeItemWithoutTitle {Won the VEX Judges Award, FIRST Excellence in Engineering Award, FIRST Industrial Design Award, and the FIRST Chairman's Award.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-5pt}

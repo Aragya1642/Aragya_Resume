@@ -32,7 +32,7 @@
 \addtolength{\oddsidemargin}{-0.530in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.75in}
+\addtolength{\topmargin}{-.50in}
 \addtolength{\textheight}{1in}
 
 \urlstyle{rm}
@@ -89,19 +89,23 @@
     \setlength\itemsep{0mm}
 }
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-\newcommand{\myLink}[1]{(\href{#1}{Link: #1})}
+\newcommand{\myLink}[1]{(\href{https://#1}{#1})}
 
 %-----------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%
 \begin{document}
 
 %----------HEADING-----------------
-% TODO: Move name down to save space up top
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \multicolumn{2}{c}{\textbf{\LARGE Aragya Goyal}} \\
-    \href{https://www.linkedin.com/in/aragya-goyal/}{Linkedin: linkedin.com/in/aragya-goyal/} & Mobile:~~~~~~~~+1-610-615-7007 \\
-    \href{https://github.com/Aragya1642}{Github: ~~github.com/Aragya1642} & Email: \href{mailto:}{agoyal1642@gmail.com}\\
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l c r}
+  \href{https://www.linkedin.com/in/aragya-goyal/}{linkedin.com/in/aragya-goyal/} & \LARGE{\textbf{Aragya Goyal}} & Mobile:~~~~~~~~+1-610-615-7007 \\
+  \href{https://github.com/Aragya1642}{github.com/Aragya1642} & ~ & Email: \href{mailto:}{agoyal1642@gmail.com} \\
 \end{tabular*}
+
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \multicolumn{2}{c}{\textbf{\LARGE Aragya Goyal}} \\
+%     \href{https://www.linkedin.com/in/aragya-goyal/}{Linkedin: linkedin.com/in/aragya-goyal/} & Mobile:~~~~~~~~+1-610-615-7007 \\
+%     \href{https://github.com/Aragya1642}{Github: ~~github.com/Aragya1642} & Email: \href{mailto:}{agoyal1642@gmail.com}\\
+% \end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -117,20 +121,20 @@
     \resumeSubHeadingListStart
         \resumeSubheading
             {Carnegie Mellon University Robotics Institute}{Pittsburgh, PA}
-            {Undergraduate Robotics Research Intern}{April 2023 -  Present}
+            {Undergraduate Roboticist Intern}{April 2023 -  Present}
             \resumeItemListStart
-                \resumeItem{ZOË 2 Rover}{\myLink{https://tinyurl.com/zoe2rover}}
+                \resumeItem{ZOË 2 Rover}{\myLink{tinyurl.com/zoe2rover}}
                     \begin{itemize}
                       \item Developing low-level software stack for the 2nd generation Zoë Rover set to conduct science in the Atacama Desert including \underline{CAN} protocols via the \underline{ros\_canopen} package for \underline{ROS2} to communicate with encoders and motors.
                       \item Developed and conducted validation of motor and motor controller datasheet specifications via physical testing.
                     \end{itemize}
-                \resumeItem{Underwater Snake Robot}{\myLink{http://tinyurl.com/humrsCMU}}
+                \resumeItem{Underwater Snake Robot}{\myLink{tinyurl.com/humrsCMU}}
                     \begin{itemize}
                       \item Implemented \underline{High-Frequency Injection} methods in Brushless DC thrusters to achieve control at low/zero speeds thus reducing minimum speed by 80\% allowing for improved overall performance of the robot.
                       \item Implemented station-keeping feature using \underline{AprilTags, IMU readings, and Nested PID Controllers} to perform robot state-estimation underwater.
                       \item Conducted major repairs on the robot and assisted in continual maintenance of the robot.
                     \end{itemize}
-                \resumeItem{Apple's E-Waste Recycling Project}{\myLink{https://tinyurl.com/applecmu}}
+                \resumeItem{Apple's E-Waste Recycling Project}{\myLink{tinyurl.com/applecmu}}
                     \begin{itemize}
                       \item Created large datasets for Machine Learning Models to detect screws in e-waste images.
                       \item Integrated \underline{ROS} and \underline{Python} packages to track AprilTags using a Realsense camera for localization of robotic arm.
@@ -152,22 +156,23 @@
 %     \resumeSubHeadingListEnd
 % \vspace{-5pt}
 
-\section{Relevant Experience}
+\section{Student Organizations}
     \resumeSubHeadingListStart
 %         \resumeSubheading
 %             {MIT-PITT-RW Autonomous Racing Team}{Pittsburgh, PA}
 %             {Core Systems Engineer}{April 2024 -  Present}
 %             \resumeItemListStart
-%               \resumeItemWithoutTitle {Leading a group of approx. 30 students to design and fabricate a rover to participate in the University Rover Challenge. \myLink{https://tinyurl.com/roverimages}}
+%               \resumeItemWithoutTitle {TODO}}
 %             \resumeItemListEnd
 % \vspace{4pt}
         \resumeSubheading
             {Society of Astronautics and Rocketry}{Pittsburgh, PA}
-            {Chief Engineer (Student Led Organization)}{August 2022 -  Present}
+            {Chief and Integration Engineer}{August 2022 -  Present}
             \resumeItemListStart
-              \resumeItemWithoutTitle {Leading a group of approx. 30 students to design and fabricate a rover to participate in the University Rover Challenge. \myLink{https://tinyurl.com/roverimages}}
-              \resumeItemWithoutTitle {Acquiring and managing over \$7000 in funding for the team.}
-              \resumeItemWithoutTitle {Led the development of a prototype robotic hand using pneumatics. \myLink{https://tinyurl.com/hydraarm}}
+              \resumeItemWithoutTitle{Engineering and integrated a rover to participate in the University Rover Challenge. \myLink{tinyurl.com/roverimages}}
+              \resumeItemWithoutTitle{Leading a multidisciplinary team of 30 students, coordinating between mechanical, electrical, software, and science teams.}
+              \resumeItemWithoutTitle{Securing and managing over \$7,000 in funding for team development and future growth.}              
+              \resumeItemWithoutTitle{Proposed and led the development of a prototype robotic hand using pneumatics. \myLink{tinyurl.com/hydraarm}}
             \resumeItemListEnd
 \vspace{4pt}
 %         \resumeSubheading
@@ -198,14 +203,14 @@
 % \vspace{4pt}
         \resumeSubheading
             {FIRST and VEX Robotics}{Exton \& Royersford, PA}
-            {Team Captain/Design Engineer (Student Led Organization)}{August 2018 -  June 2022}
+            {Team Captain/Design Engineer}{August 2018 -  June 2022}
             \resumeItemListStart
               \resumeItemWithoutTitle {Designed six robots in \underline{Solidworks} across four years. All robots qualified for higher level of competition including Worlds.}
               % \begin{itemize}
               %   \item https://tinyurl.com/dewbot1640 - This is a short link to video on FIRST
               % \end{itemize}\vspace{-2pt}
               \resumeItemWithoutTitle {Mentored younger students about robot design and manufacturing through workshops and general building.}
-              \resumeItemWithoutTitle {Won the VEX Judges Award, FIRST Excellence in Engineering Award, FIRST Industrial Design Award, and the FIRST Chairman's Award. \href{https://bit.ly/3w7a6b1}{(VEX Link: https://bit.ly/3w7a6b1)} \href{https://tinyurl.com/dwbot17}{(FIRST Link: https://tinyurl.com/dwbot17)}}
+              \resumeItemWithoutTitle {Won the VEX Judges Award, FIRST Excellence in Engineering Award, FIRST Industrial Design Award, and the FIRST Chairman's Award. \href{https://bit.ly/3w7a6b1}{(VEX Link: bit.ly/3w7a6b1)} \href{https://tinyurl.com/dwbot17}{(FIRST Link: tinyurl.com/dwbot17)}}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-5pt}
@@ -214,32 +219,32 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{STM-32 Elevator Simulator (ARM Assembly, Project Integration)}
-    {Designed and Implemented software architecture in \underline{ARM Assembly} to operate a physical elevator simulator PCB. \href{https://tinyurl.com/stmelevator}{(Link: https://tinyurl.com/stmelevator)}}
-% \vspace{2pt}
+    {Designed and Implemented software architecture in \underline{ARM Assembly} to operate a physical elevator simulator PCB. \myLink{tinyurl.com/stmelevator}}
+\vspace{3pt}
     \resumeSubItem{Custom Cane (Human Centered Design, Solidworks)}
-    {Designed and fabricated a Walker-Cane Fusion to increase bathrooms accessibility for wheelchair users. Won first place at the Senior Design Expo. \href{https://tinyurl.com/CustomCane}{(Link: https://tinyurl.com/CustomCane)}}
-% \vspace{2pt}
+    {Designed and fabricated a Walker-Cane Fusion to increase bathrooms accessibility for wheelchair users. Won first place at the Senior Design Expo. \myLink{tinyurl.com/CustomCane}}
+\vspace{3pt}
     \resumeSubItem{Formula SAE E-Brake Bias (Solidworks)}
-    {Developed an e-brake bias system for a formula style racecar, utilizing \underline{Solidworks} and \underline{3D printing} technology to enhance performance and usability. Won the FSAE Innovation Award for the design and implentation of the project. \href{https://tinyurl.com/ebrakeb}{(Link: https://tinyurl.com/ebrakeb)}}
-% \vspace{2pt}
+    {Developed an e-brake bias system for a formula style racecar, utilizing \underline{Solidworks} and \underline{3D printing} technology to enhance performance and usability. Won the FSAE Innovation Award for the design and implentation of the project. \myLink{tinyurl.com/ebrakeb}}
+\vspace{3pt}
     \resumeSubItem{Formula SAE Low-Cost Slip Angle Sensor (OpenCV, Raspberry Pi)}
     {Worked to design and code prototypes of sensors which would allow for validation of slip angle using mouse sensors, digital cameras, and IMU's.}
-% \vspace{2pt}
+\vspace{3pt}
     \resumeSubItem{String Art Generator and Optimizer (Research, Python)}
-    {Developed an innovative string art optimization tools and GUI using \underline{Python} programming to improve upon existing string art generators. \href{https://tinyurl.com/goyalstring}{(Link: https://tinyurl.com/goyalstring)}}
+    {Developed an innovative string art optimization tools and GUI using \underline{Python} programming to improve upon existing string art generators. \myLink{tinyurl.com/goyalstring}}
 % \vspace{2pt}
-    \resumeSubItem{Silicon Prosthetic Hand (Research, Solidworks)}
-    {Designed and Manufactured prototype prosthetic hand with silicone soft actuators and tested with human participants for AP Research Project. \href{https://tinyurl.com/myprosthetic}{(Link: https://tinyurl.com/myprosthetic)}}
-% \vspace{2pt}
-    \resumeSubItem{Bird Sanctuary Restoration (Eagle Scout Project, Volunteering)}
-    {Organized a project to restore parts of the Audubon Bird Sanctuary by painting fences, guardrails, and small buildings. \href{https://tinyurl.com/goyaleagle}{(Link: https://tinyurl.com/goyaleagle)}}
+%     \resumeSubItem{Silicon Prosthetic Hand (Research, Solidworks)}
+%     {Designed and Manufactured prototype prosthetic hand with silicone soft actuators and tested with human participants for AP Research Project. \href{https://tinyurl.com/myprosthetic}{(Link: https://tinyurl.com/myprosthetic)}}
+% % \vspace{2pt}
+%     \resumeSubItem{Bird Sanctuary Restoration (Eagle Scout Project, Volunteering)}
+%     {Organized a project to restore parts of the Audubon Bird Sanctuary by painting fences, guardrails, and small buildings. \href{https://tinyurl.com/goyaleagle}{(Link: https://tinyurl.com/goyaleagle)}}
   \resumeSubHeadingListEnd
-\vspace{-5pt}
+\vspace{-2pt}
 
 %-----------SKILLS-----------------
 \section{Skills and Awards}
 	\resumeSubHeadingListStart
-        \resumeSubItem{Languages}{Python, C++, ARM Assembly} % C, VHDL
+        \resumeSubItem{Languages}{Python, C++, ARM Assembly, RISC-V Assembly} % C, VHDL
         \resumeSubItem{Technologies}{Linux, ROS, ROS2, Docker, Github, Solidworks, MATLAB, Microsoft Products, Microcontrollers, OpenCV} % CVAT, FPGA, Google Colab
         \resumeSubItem{Manufacturing}{Milling, Soldering, Laser Cutting, General Shop Tools}
         \resumeSubItem{Awards}{Dean's Honor List (2021-Present), Honor List (2021-Present), Eagle Scout}

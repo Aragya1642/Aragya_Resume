@@ -19,6 +19,9 @@
 \usepackage{graphicx}
 \usepackage{caption}
 
+% TODO: For underlining
+% https://alexwlchan.net/2017/latex-underlines/
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -122,19 +125,19 @@
             \resumeItemListStart
                 \resumeItem{ZOË 2 Rover}{\myLink{tinyurl.com/zoe2rover}}
                     \begin{itemize}
-                      \item Developing low-level software stack for the 2nd generation Zoë Rover set to conduct science in the Atacama Desert including \underline{CAN} protocols via the \underline{ros\_canopen} package for \underline{ROS2} to communicate with encoders and motors.
+                      \item Developing low-level software stack for the 2nd generation Zoë Rover set to conduct science in the Atacama Desert including \underline{CANopen} protocols via the \underline{ros\_canopen} package for \underline{ROS2} to communicate with encoders and motors.
                       \item Conducted motor and motor controller datasheet specifications validation via physical testing.
                     \end{itemize}
                 \resumeItem{Underwater Snake Robot}{\myLink{tinyurl.com/humrsCMU}}
                     \begin{itemize}
-                      \item Implemented \underline{High-Frequency Injection} methods in Brushless DC thrusters to achieve control at low/zero speeds thus reducing minimum speed by 80\% allowing for improved overall performance of the robot.
-                      \item Implemented station-keeping feature using \underline{AprilTags, IMU readings, and Nested PID Controllers} to perform robot state-estimation underwater.
-                      \item Conducted major repairs on the robot and assisted in continual maintenance of the robot.
+                      \item Implemented \underline{High-Frequency Injection} methods in Brushless DC thrusters to achieve control at low/zero speeds thus reducing minimum speed by 80\% allowing for reduced oscillations in station-keeping control loops.
+                      \item Deployed station-keeping feature using \underline{AprilTags, IMU readings, and Nested PID Controllers} to perform robot state-estimation underwater.
+                      \item Conducted major repairs on the buoyancy module of the robot and assisted in continual electrical maintenance.
                     \end{itemize}
                 \resumeItem{Apple's E-Waste Recycling Project}{\myLink{tinyurl.com/applecmu}}
                     \begin{itemize}
-                      \item Created large datasets for Machine Learning Models to detect screws in e-waste images.
-                      \item Integrated \underline{ROS} and \underline{Python} packages to track AprilTags using a Realsense camera for localization of robotic arm.
+                      \item Created datasets consisting of thousands of images for Machine Learning Models to detect screws in e-waste images.
+                      \item Integrated \underline{ROS1} and \underline{Python} packages to track AprilTags using a \underline{Realsense camera} for localization of UR3 robotic arm.
                       \item Manufactured custom AprilTags using lasercutters and sheet metal manufacturing methods.
                     \end{itemize}
             \resumeItemListEnd
@@ -163,13 +166,16 @@
 %             \resumeItemListEnd
 % \vspace{4pt}
         \resumeSubheading
-            {Society of Astronautics and Rocketry}{Pittsburgh, PA}
-            {Chief and Integration Engineer}{August 2022 -  Present}
+            {University Rover Challenge}{Pittsburgh, PA}
+            {Chief Engineer/Integration Lead}{August 2022 -  Present}
             \resumeItemListStart
-              \resumeItemWithoutTitle{Engineering and leading integration of a rover to participate in the University Rover Challenge. \myLink{tinyurl.com/roverimages}}
-              \resumeItemWithoutTitle{Leading a multidisciplinary team of 30 students, coordinating between mechanical, electrical, software, and science teams.}
-              \resumeItemWithoutTitle{Securing and managing over \$7,000 in funding for team development and future growth.}              
-              \resumeItemWithoutTitle{Proposed and led the development of a prototype robotic hand using pneumatics. \myLink{tinyurl.com/hydraarm}}
+              \resumeItemWithoutTitle{Leading a multidisciplinary team of 30 students in engineering a rover, coordinating integration efforts across mechanical, electrical, software, and science teams. \myLink{tinyurl.com/roverimages}}
+              \resumeItemWithoutTitle{Proposed and spearheaded the development of a prototype robotic hand utilizing pneumatics. \myLink{tinyurl.com/hydraarm}}
+              \resumeItemWithoutTitle{Securing and managing over \$7,000 in funding to support team development and future growth.}
+              % \resumeItemWithoutTitle{Engineering and leading integration of a rover to participate in the University Rover Challenge. \myLink{tinyurl.com/roverimages}}
+              % \resumeItemWithoutTitle{Leading a multidisciplinary team of 30 students, coordinating between mechanical, electrical, software, and science teams.}
+              % \resumeItemWithoutTitle{Securing and managing over \$7,000 in funding for team development and future growth.}              
+              % \resumeItemWithoutTitle{Proposed and led the development of a prototype robotic hand using pneumatics. \myLink{tinyurl.com/hydraarm}}
             \resumeItemListEnd
 \vspace{4pt}
 %         \resumeSubheading
@@ -202,11 +208,12 @@
             {FIRST and VEX Robotics}{Exton \& Royersford, PA}
             {Team Captain/Design Engineer}{August 2018 -  June 2022}
             \resumeItemListStart
-              \resumeItemWithoutTitle {Designed six robots in \underline{Solidworks} across four years. All robots qualified for higher level of competition including Worlds.}
+              \resumeItemWithoutTitle{Mentored younger students in \underline{Solidworks} and manufacturing through workshops, enabling \underline{three-time Worlds} qualification.}
+              % \resumeItemWithoutTitle {Designed six robots in \underline{Solidworks} across four years. All robots qualified for higher level of competition including Worlds.}
               % \begin{itemize}
               %   \item https://tinyurl.com/dewbot1640 - This is a short link to video on FIRST
               % \end{itemize}\vspace{-2pt}
-              \resumeItemWithoutTitle {Mentored younger students about robot design and manufacturing through workshops and general building.}
+              % \resumeItemWithoutTitle {Mentored younger students about robot design and manufacturing through workshops and general building.}
               \resumeItemWithoutTitle {Won the VEX Judges Award, FIRST Excellence in Engineering Award, FIRST Industrial Design Award, and the FIRST Chairman's Award. \href{https://bit.ly/3w7a6b1}{(VEX Link: bit.ly/3w7a6b1)} \href{https://tinyurl.com/dwbot17}{(FIRST Link: tinyurl.com/dwbot17)}}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
@@ -227,7 +234,8 @@
     \resumeSubItem{Formula SAE Low-Cost Slip Angle Sensor (OpenCV, Raspberry Pi)}
     {Worked to design and code prototypes of sensors which would allow for validation of slip angle using mouse sensors, digital cameras, and IMU's.}
 \vspace{3pt}
-    \resumeSubItem{String Art Generator and Optimizer (Research, Python)}
+  % TODO: Swap out srting generator for SteelHacks Project  
+  \resumeSubItem{String Art Generator and Optimizer (Research, Python)}
     {Developed an innovative string art optimization tools and GUI using \underline{Python} programming to improve upon existing string art generators. \myLink{tinyurl.com/goyalstring}}
 % \vspace{2pt}
 %     \resumeSubItem{Silicon Prosthetic Hand (Research, Solidworks)}
@@ -242,7 +250,7 @@
 \section{Skills and Awards}
 	\resumeSubHeadingListStart
         \resumeSubItem{Languages}{Python, C++, ARM Assembly, RISC-V Assembly} % C, VHDL
-        \resumeSubItem{Technologies}{Linux, ROS, ROS2, Docker, Github, Solidworks, MATLAB, Microsoft Products, Microcontrollers, OpenCV} % CVAT, FPGA, Google Colab
+        \resumeSubItem{Technologies}{Linux, ROS1, ROS2, Docker, Github, Solidworks, MATLAB, Microsoft Products, Microcontrollers, OpenCV} % CVAT, FPGA, Google Colab
         \resumeSubItem{Manufacturing}{Milling, Soldering, Laser Cutting, General Shop Tools}
         \resumeSubItem{Awards}{Dean's Honor List (2021-Present), Honor List (2021-Present), Eagle Scout}
     \resumeSubHeadingListEnd

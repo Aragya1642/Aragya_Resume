@@ -1,9 +1,11 @@
-%------------------------
-% Author : Aragya Goyal
-% Original Template: https://www.overleaf.com/latex/templates/resume-template-by-anubhav/dhmkrwtksdgy
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
 %------------------------
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -12,15 +14,28 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
 
-% For images
-\usepackage{graphicx}
-\usepackage{caption}
 
-% TODO: For underlining
-% https://alexwlchan.net/2017/latex-underlines/
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -29,13 +44,13 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.530in}
-\addtolength{\evensidemargin}{-0.375in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.50in}
-\addtolength{\textheight}{1in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
 
-\urlstyle{rm}
+\urlstyle{same}
 
 \raggedbottom
 \raggedright
@@ -43,272 +58,190 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeItemWithoutTitle}[1]{
+\newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
   }
 }
 
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{#2} \\
-      \textit{#3} & \textit{#4} \\
-    \end{tabular*}\vspace{-5pt}
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\educationSubheading}[6]{
-  \vspace{-1pt}\item
+\newcommand{\resumeSubSubheading}[2]{
+    \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{#2} \\
-      \textit{#3}\textbf{#4} & \textit{#5} \\
-      \footnotesize{\textbf{Courses:} #6}
-    \end{tabular*}\vspace{-5pt}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand{\labelitemii}{$\circ$}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{
-  \begin{itemize}
-    \setlength\itemsep{0mm}
-}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-\newcommand{\myLink}[1]{(\href{https://#1}{#1})}
 
-%-----------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
 
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l c r}
-  \href{https://www.linkedin.com/in/aragya-goyal/}{linkedin.com/in/aragya-goyal/} & \LARGE{\textbf{Aragya Goyal}} & Mobile:~~~~~~~~+1-610-615-7007 \\
-  \href{https://github.com/Aragya1642}{github.com/Aragya1642} & 3209 Joe Hammer Sq, Pittsburgh, PA & Email: \href{mailto:}{agoyal1642@gmail.com} \\
-\end{tabular*}
-
+%----------HEADING----------
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%     \multicolumn{2}{c}{\textbf{\LARGE Aragya Goyal}} \\
-%     \href{https://www.linkedin.com/in/aragya-goyal/}{Linkedin: linkedin.com/in/aragya-goyal/} & Mobile:~~~~~~~~+1-610-615-7007 \\
-%     \href{https://github.com/Aragya1642}{Github: ~~github.com/Aragya1642} & Email: \href{mailto:}{agoyal1642@gmail.com}\\
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
 % \end{tabular*}
 
-%-----------EDUCATION-----------------
+\begin{center}
+    {\Huge \scshape First Last} \\ \vspace{1pt}
+    123 Street Name, Town, State 12345 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 123-456-7890 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{email@gmail.com}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
 \section{Education}
-      \resumeSubHeadingListStart
-        \educationSubheading
-            {University of Pittsburgh (Swanson School of Engineering/Frederick Honors Col.)}{Pittsburgh, PA}
-            {B.S. - Computer Engineering (Autonomous Systems Focus); }{GPA: 3.99/4.00}{August 2022 - April 2026}
-            {Robotic Control, Embedded Processors/Systems, Microelectronics, Data Structures and Algorithms}
-      \resumeSubHeadingListEnd
-
-%-----------RESEARCH EXPERIENCE-----------------
-\section{Professional Experience}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-            {ESTAT Actuation}{Pittsburgh, PA}
-            {Robotics Developer Co-op}{May 2025 - Present}
-            \resumeItemListStart
-                \resumeItemWithoutTitle{Directing the assembly and delivery of six custom battery boxes for the Suzuki Moqba robot, showcased at the Japan Mobility Show 2025. Overseeing \underline{quality control}, led \underline{debugging} efforts to resolve heating issues, and ensured a professional final build.}
-                \resumeItemWithoutTitle{Building and commisioning robotic test stands that expanded clutch testing capacity by 133\%, covering mechanical assembly, electrical wiring, programming, and documentation for long-term use and potential sales to external customers.}
-                % \resumeItemWithoutTitle{Designing PCB for 3 different customer facing demos, making it easier to debug issues as they arrive.}
-                \resumeItemWithoutTitle{Testing new generation rotary clutch prototypes, creating documentation explaining all the steps taken, and using these prototypes to inform design decisions for next generation production clutches.}
-                % \resumeItemWithoutTitle{Developing a PCB for a lightweight electroadhesive exotendon system with potential applications in military and surgical uses.}
-            \resumeItemListEnd  
-        \resumeSubheading
-            {Carnegie Mellon University Robotics Institute}{Pittsburgh, PA}
-            {Undergraduate Roboticist Researcher}{April 2023 -  Present}
-            \resumeItemListStart
-                \resumeItem{ZOË 2 Rover (Advisor: Dr. David Wettergreen)}{\myLink{tinyurl.com/zoe2rover}}
-                    \begin{itemize}
-                      \item Assisting in the development of software architecture and the robotic controller implementation for a novel 4-wheeled rover with a unique passive steering mechanism.
-                      \item Enabling low-level software development for the rover using \underline{ROS2} and \underline{C++} to interface with motor controllers and encoders via \underline{CANOpen} protocol.
-                      % \item Developed low-level software stack for the 2nd generation Zoë Rover set to conduct science in the Atacama Desert including \underline{CANopen} protocols via the \underline{ros\_canopen} package for \underline{ROS2} to communicate with encoders and motors.
-                      % \item Conducted motor and motor controller datasheet specifications validation via physical testing.
-                    \end{itemize}
-                \resumeItem{Underwater Snake Robot (Advisor: Dr. Howie Choset)}{\myLink{tinyurl.com/humrsCMU}}
-                    \begin{itemize}
-                      \item Implemented \underline{High-Frequency Injection} methods in Brushless DC thrusters to achieve control at low/zero speeds thus reducing minimum speed by 80\% allowing for reduced oscillations in station-keeping control loops.
-                      \item Deployed station-keeping feature using \underline{AprilTags, IMU readings, and Nested PID Controllers} to perform robot state-estimation underwater.
-                      \item Conducted major repairs on the buoyancy module of the robot and assisted in continual electrical/hardware maintenance.
-                    \end{itemize}
-                \resumeItem{Apple's E-Waste Recycling Project (Advisor: Dr. Matthew Travers)}{\myLink{tinyurl.com/applecmu}}
-                    \begin{itemize}
-                      \item Labeled datasets consisting of thousands of images for Machine Learning Models to detect screws in e-waste images.
-                      \item Integrated \underline{ROS1} and \underline{Python} packages to track AprilTags using a \underline{Realsense camera} for localization of UR3 robotic arm.
-                      \item Manufactured custom AprilTags using lasercutters and sheet metal manufacturing methods.
-                    \end{itemize}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
-\vspace{-5pt}
-
-
-%-----------EXTRACURRICULARS-----------------
-\section{Leadership \& Activities}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-            {Robotics and Automation Society (University Rover Challenge/Micromouse)}{Pittsburgh, PA}
-            {Chief Engineer/Integration Lead}{August 2022 -  Present}
-            \resumeItemListStart
-              \resumeItemWithoutTitle{Leading a multidisciplinary team of 30 students in engineering a rover, \underline{coordinating integration} efforts across mechanical, electrical, software, and bioscience teams. \myLink{tinyurl.com/roverimages}}
-              \resumeItemWithoutTitle{Mentoring younger students in \underline{Onshape, KiCAD}, and general manufacturing processes through hands-on building.} 
-              \resumeItemWithoutTitle{Proposed and spearheaded the development of a prototype robotic hand utilizing pneumatics. \myLink{tinyurl.com/hydraarm}}
-              \resumeItemWithoutTitle{Securing and \underline{managing over \$7,000 in funding} to support team development and future growth.}
-            \resumeItemListEnd
-\vspace{4pt}
-%         \resumeSubheading
-%             {University of Pittsburgh New Students Program}{Pittsburgh, PA}
-%             {Panther Connect Leader}{}
-%             \resumeItemListStart
-%               \resumeItemWithoutTitle{Selected as one of 30 leaders to mentor and guide a group of 20 incoming freshmen, facilitating their transition to university life through organized activities and support.}
-%             \resumeItemListEnd
-% \vspace{4pt}
-%         \resumeSubheading
-%             {Formula SAE - Panther Racing}{Pittsburgh, PA}
-%             {R\&D Engineer (Student Led Organization)}{August 2022 -  March 2024}
-%             \resumeItemListStart
-%                 \resumeItem{Project Course - Find Movie Similarity from Plot Summaries}
-%                     {Created project based course using Unsupervised learning and natural language processing.}
-%                 \resumeItem{Tutorial - Introduction to Reinforcement Learning}
-%                     {Created tutorial for Q-learning RL algorithm and  concepts.}
-%             \resumeItemListEnd
-% \vspace{4pt}
-%         \resumeSubheading
-%             {FIRST Robotics}{Exton, PA}
-%             {Team Captain/Design Lead (Student Led Organization)}{January 2020 -  June 2022}
-%             \resumeItemListStart
-%                 \item Led a team of 40 students and qualified for the Worlds level of competition, the highest win percentage since 2005, and a top 5\% ranking globally. \href{https://tinyurl.com/dewbot17}{(FIRST Link: https://tinyurl.com/dewbot17)}
-%                 \item Utilized Solidworks to design and develop competition and award-winning robots.
-%             \resumeItemListEnd
-% \vspace{4pt}
-%         \resumeSubheading
-%             {VEX Robotics}{Royersford, PA}
-%             {Team Captain (Student Led Organization)}{August 2018 -  June 2022}
-%             \resumeItemListStart
-%               \item Organized VEX robotics competition event for 60+ teams, hosted workshops to teach CAD to fellow club members, and received recognition for outstanding leadership. \href{https://bit.ly/3w7a6b1}{(VEX Link: https://bit.ly/3w7a6b1)}
-%               \item Qualified for the State's level of competition for all 4 years of high school.
-%             \resumeItemListEnd
-% \vspace{4pt}
-        % \resumeSubheading
-        %     {FIRST and VEX Robotics}{Exton \& Royersford, PA}
-        %     {Team Captain/Design Engineer}{August 2018 -  June 2022}
-        %     \resumeItemListStart
-        %       \resumeItemWithoutTitle{Mentored younger students in \underline{Solidworks} and manufacturing through workshops, enabling \underline{three-time Worlds} qualification.}
-        %       % \resumeItemWithoutTitle {Designed six robots in \underline{Solidworks} across four years. All robots qualified for higher level of competition including Worlds.}
-        %       % \begin{itemize}
-        %       %   \item https://tinyurl.com/dewbot1640 - This is a short link to video on FIRST
-        %       % \end{itemize}\vspace{-2pt}
-        %       % \resumeItemWithoutTitle {Mentored younger students about robot design and manufacturing through workshops and general building.}
-        %       \resumeItemWithoutTitle {Won the VEX Judges Award, FIRST Excellence in Engineering Award, FIRST Industrial Design Award, and the FIRST Chairman's Award. \href{https://bit.ly/3w7a6b1}{(VEX Link: bit.ly/3w7a6b1)} \href{https://tinyurl.com/dwbot17}{(FIRST Link: tinyurl.com/dwbot17)}}
-        %     \resumeItemListEnd
-    \resumeSubHeadingListEnd
-\vspace{-5pt}
-
-%-----------TECHNICAL PROJECTS-----------------
-\section{Projects}
   \resumeSubHeadingListStart
-%     \resumeSubItem{555 Timer Roulette Board (KiCAD, Onshape, Circuit Design)}
-%     {Designed and built a PCB-based LED Roulette Wheel using a 555 timer and CD4017 counter, featuring dynamic speed control through capacitive timing, dip switch power control, and a custom 3D-printed enclosure for portability.\myLink{tinyurl.com/555roulette}}
-% \vspace{3pt}
-%     \resumeSubItem{Bop It Project (KiCAD, Onshape, Microcontrollers)}
-%     {Developed an interactive “Space Invaders Bop-It” reflex game using a bare ATmega328P chip, integrating analog inputs, audio-visual feedback, and custom embedded logic for randomized commands and progressively challenging gameplay. \myLink{tinyurl.com/spacebopit}}
-% \vspace{3pt}
-    \resumeSubItem{Micromouse Robot}
-    {Designed, assembled, and programmed a custom Micromouse robot through iterative \underline{PCB development}, integrating motor control, IMU, IR sensors, and a display system with \underline{low-level embedded programming}. Implemented PID control loops for navigation. Placed 3rd in competition at Stony Brook University IEEE conference. \myLink{tinyurl.com/goyalmm}}
-\vspace{3pt}
-%     \resumeSubItem{Trains Project (Systems and Software Engineering)}
-%     {\myLink{tinyurl.com/agtrain2025}}
-% \vspace{3pt}
-%     \resumeSubItem{VoltVitals Embedded Board}
-%     {Designed and prototyped an \underline{ESP32} based circuit with \underline{web interface} to measure home outlet voltage and report over Wi-Fi, collaborating with FirstEnergy engineers to enable early outage detection. \myLink{tinyurl.com/voltvitals}}
-% \vspace{3pt}
-    \resumeSubItem{An Artistic take on Bipedal Robots}
-    {Created a bipedal robot using \underline{Onshape and Arduino} to carry a symbolic lantern given to all freshmen, reimagining a campus tradition through an artistic and technological lens. \myLink{tinyurl.com/gbipedal}}
-\vspace{3pt}
-%     \resumeSubItem{Calico AI Event Curator (AI, Website Development)}
-%     {\myLink{tinyurl.com/steelcalicoai}}
-% \vspace{3pt}
-%     \resumeSubItem{STM-32 Elevator Simulator (ARM Assembly, Project Integration)}
-%     {Designed and Implemented software architecture in \underline{ARM Assembly} to operate a physical elevator simulator PCB. \myLink{tinyurl.com/stmelevator}}
-% \vspace{3pt}
-%     \resumeSubItem{Custom Cane (Human Centered Design, Solidworks)}
-%     {Designed and fabricated a Walker-Cane Fusion to increase bathrooms accessibility for wheelchair users. Won first place at the Senior Design Expo. \myLink{tinyurl.com/CustomCane}}
-% \vspace{3pt}
-    \resumeSubItem{Formula SAE E-Brake Bias}
-    {Developed a \underline{3D-printed} e-brake bias system for a Formula SAE racecar using \underline{Solidworks}, improving performance and usability; won the FSAE Innovation Award for implementation of the project. \myLink{tinyurl.com/ebrakeb}}
-\vspace{3pt}
-%     \resumeSubItem{Formula SAE Low-Cost Slip Angle Sensor (OpenCV, Raspberry Pi)}
-%     {Worked to design and code prototypes of sensors which would allow for validation of slip angle using mouse sensors, digital cameras, and IMU's.}
-% \vspace{3pt}
-%     \resumeSubItem{String Art Generator and Optimizer (Research, Python)}
-%     {Developed an innovative string art optimization tools and GUI using \underline{Python} programming to improve upon existing string art generators. \myLink{tinyurl.com/goyalstring}}
-% \vspace{3pt}
-%   \resumeSubItem{Silicon Prosthetic Hand (High School Independent Research, Solidworks)}
-%   {Designed and manufactured prototype prosthetic hand with silicone soft actuators and tested with human participants for an AP Research Project. \href{https://tinyurl.com/myprosthetic}{(Link: https://tinyurl.com/myprosthetic)}}
-% \vspace{3pt}
-%     \resumeSubItem{Bird Sanctuary Restoration (Eagle Scout Project, Volunteering)}
-%     {Organized a project to restore parts of the Audubon Bird Sanctuary by painting fences, guardrails, and small buildings. \href{https://tinyurl.com/goyaleagle}{(Link: https://tinyurl.com/goyaleagle)}}
+    \resumeSubheading
+      {State University}{Sep. 2017 -- May 2021}
+      {Bachelor of Science in Computer Science}{City, State}
   \resumeSubHeadingListEnd
-\vspace{-2pt}
 
-%-----------PUBLICATIONS-----------------
-\section{Publications}
-\resumeSubHeadingListStart
-  \item M. Nye, A. Raji, A. Saba, E. Erlich, R. Exley, A. Goyal, A. Matros, R. Misra, M. Sivaprakasam, M. Bertogna, D. Ramanan, and S. Scherer, \textbf{“BETTY Dataset: A Multi-modal Dataset for Full-Stack Autonomy,”} in Proc. IEEE Int. Conf. Robot. Autom. (ICRA), 2025. [Online]. Available: \myLink{arxiv.org/abs/2505.07266}
-\resumeSubHeadingListEnd
-\vspace{-5pt}
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Software Methodology
+                \item Algorithms Analysis
+                \item Database Management
+                \item Artificial Intelligence
+                \item Internet Technology
+                \item Systems Programming
+                \item Computer Architecture
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
 
-%-----------SKILLS AND AWARDS-----------------
-\section{Skills and Awards}
-	  \resumeSubHeadingListStart
-        \resumeSubItem{Software}{Linux, ROS1, ROS2, Github, Python, C++, C, MATLAB, ARM and RISC-V Assembly, Google Colab, OpenCV}
-        \resumeSubItem{Electrical}{KiCAD, LTSpice, Soldering, Arduino, ESP32}
-        \resumeSubItem{Mechanical}{Solidworks, Onshape, Milling, MIG Welding, Laser Cutting, General Shop Tools}
-        \resumeSubItem{Awards}{SSOE Design Expo 1st place Art of Making, Micromouse Competition 3rd place, FSAE Innovation Award, Eagle Scout}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Electronics Company}{May 2020 -- August 2020}
+      {Software Engineer Intern}{City, State}
+      \resumeItemListStart
+        \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+        \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+        \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+        \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Startup, Inc}{May 2019 -- August 2019}
+      {Front End Developer Intern}{City, State}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gym Reservation Bot} $|$ \emph{Python, Selenium, Google Cloud Console}}{January 2021}
+          \resumeItemListStart
+            \resumeItem{Developed an automatic bot using Python and Google Cloud Console to register myself for a timeslot at my school gym.}
+            \resumeItem{Implemented Selenium to create an instance of Chrome in order to interact with the correct elements of the web page.}
+            \resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday from the cloud.}
+            \resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Ticket Price Calculator App} $|$ \emph{Java, Android Studio}}{November 2020}
+          \resumeItemListStart
+            \resumeItem{Created an Android application using Java and Android Studio to calculate ticket prices for trips to museums in NYC.}
+            \resumeItem{Processed user inputted information in the back-end of the app to return a subtotal price based on the tickets selected.}
+            \resumeItem{Utilized the layout editor to create a UI for the application in order to allow different scenes to interact with each other.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
+          \resumeItemListStart
+            \resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
+            \resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
+            \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+          \resumeItemListEnd 
     \resumeSubHeadingListEnd
-\vspace{-5pt}
+\vspace{-15pt}
 
-%-----------AWARDS-----------------
-% \section{Awards and Special Interests}
-% \resumeSubHeadingListStart
-%     \resumeSubItem{General Awards}
-%     {Dean's Honor List (2021-Present), Honor List (2021-Present), Eagle Scout}
-% \vspace{2pt}
-%     \resumeSubItem{Engineering Activities}
-%     {FSAE Innovation Award, FIRST Chairman's Award, FIRST Excellence in Engineering, FIRST Industrial Design Award, VEX Judges Award}
-%   \resumeSubHeadingListEnd
-% \vspace{-5pt}
 
-% -----------VOLUNTEER EXPERIENCE-----------------
-% \section{Volunteer Experience}
-%   \resumeSubHeadingListStart
-%     \resumeSubheading
-%       {American Red Cross}{Royersford, PA}
-%       {Blood Donor Ambassador}{Jan 2019 - Present}
-%       \begin{itemize}
-%         \item 
-%       \end{itemize}
-%     \resumeSubheading
-%       {Boy Scouts of America}{Royersford, PA}
-%       {Eagle Scout Project}{Jan 2018 - Present}
-%       \begin{itemize}
-%         \item 
-%       \end{itemize}
-%   \resumeSubHeadingListEnd
-% \vspace{-5pt}
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL} \\
+     \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
+     \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+            \resumeItemListStart
+                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
 
 \end{document}

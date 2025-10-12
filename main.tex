@@ -12,7 +12,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage[pdftex, hidelinks]{hyperref}
 \usepackage{fancyhdr}
 
 % For images
@@ -95,9 +95,9 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l c r}
-  \href{https://www.linkedin.com/in/aragya-goyal/}{linkedin.com/in/aragya-goyal/} & \LARGE{\textbf{Aragya Goyal}} & Mobile:~~~~~~~~+1-610-615-7007 \\
-  \href{https://github.com/Aragya1642}{github.com/Aragya1642} & 3209 Joe Hammer Sq, Pittsburgh, PA & Email: \href{mailto:}{agoyal1642@gmail.com} \\
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \LARGE{\textbf{Aragya Goyal}} & Mobile:~~~~~~~~+1-610-615-7007 \\
+  3209 Joe Hammer Sq, Pittsburgh, PA & Email: \href{mailto:}{agoyal1642@gmail.com} \\
 \end{tabular*}
 
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -121,8 +121,8 @@
             {ESTAT Actuation}{Pittsburgh, PA}
             {Robotics Developer Co-op}{May 2025 - Present}
             \resumeItemListStart
-                \resumeItemWithoutTitle{Directing the assembly and delivery of \underline{6 custom battery boxes} for the Suzuki Moqba robot, showcased at the Japan Mobility Show. Overseeing quality control, leading debugging efforts to resolve heating issues, and ensuring a professional final build.}
-                \resumeItemWithoutTitle{Building and commisioning multiple robotic test stands \underline{expanding clutch testing capacity by 133\%}, covering mechanical assembly, electrical wiring, programming, and documentation for long-term use and potential sales to external customers.}
+                \resumeItemWithoutTitle{Building and commissioning multiple robotic test stands \underline{expanding clutch testing capacity by 133\%}, covering mechanical assembly, electrical wiring, programming, and documentation for long-term use and potential sales to external customers.}
+                \resumeItemWithoutTitle{Directing the assembly and delivery of \underline{6 custom battery boxes} for the Suzuki Moqba robot at the Japan Mobility Show. Overseeing quality control, leading debugging efforts to resolve heating issues, and ensuring a professional final build.}
                 % \resumeItemWithoutTitle{Designing PCB for 3 different customer facing demos, making it easier to debug issues as they arrive.}
                 \resumeItemWithoutTitle{Testing new generation rotary clutch prototypes to improve reliability and evaluate longevity. Creating documentation explaining all the steps taken, and using these prototypes to inform design decisions for next generation production clutches.}
                 % \resumeItemWithoutTitle{Developing a PCB for a lightweight electroadhesive exotendon system with potential applications in military and surgical uses.}
@@ -131,20 +131,20 @@
             {Carnegie Mellon University Robotics Institute}{Pittsburgh, PA}
             {Undergraduate Roboticist Researcher}{April 2023 -  Present}
             \resumeItemListStart
-                \resumeItem{ZOË 2 Rover (Advisor: Dr. David Wettergreen)}{\myLink{tinyurl.com/zoe2rover}}
+                \resumeItem{ZOË 2 Rover (Advisor: Dr. David Wettergreen)}{}
                     \begin{itemize}
                       \item Assisting in the development of software architecture and the robotic controller implementation for a novel 4-wheeled rover with a unique passive steering mechanism.
                       \item Enabling low-level software development for the rover using \underline{ROS2} and \underline{C++} to interface with motor controllers and encoders via \underline{CANOpen} protocol.
                       % \item Developed low-level software stack for the 2nd generation Zoë Rover set to conduct science in the Atacama Desert including \underline{CANopen} protocols via the \underline{ros\_canopen} package for \underline{ROS2} to communicate with encoders and motors.
                       % \item Conducted motor and motor controller datasheet specifications validation via physical testing.
                     \end{itemize}
-                \resumeItem{Underwater Snake Robot (Advisor: Dr. Howie Choset)}{\myLink{tinyurl.com/humrsCMU}}
+                \resumeItem{Underwater Snake Robot (Advisor: Dr. Howie Choset)}{}
                     \begin{itemize}
                       \item Implemented High-Frequency Injection methods in Brushless DC thrusters to achieve control at low/zero speeds thus \underline{reducing minimum speed by 80\%} allowing for reduced oscillations in station-keeping control loops.
                       \item Deployed station-keeping feature using \underline{AprilTags, IMU readings, and Nested PID Controllers} to perform robot state-estimation underwater.
                       \item Conducted major repairs on the buoyancy module of the robot and assisted in continual electrical/hardware maintenance.
                     \end{itemize}
-                \resumeItem{Apple's E-Waste Recycling Project (Advisor: Dr. Matthew Travers)}{\myLink{tinyurl.com/applecmu}}
+                \resumeItem{Apple's E-Waste Recycling Project (Advisor: Dr. Matthew Travers)}{}
                     \begin{itemize}
                       \item Labeled datasets consisting of \underline{4000+ images} for Machine Learning Models to detect screws in iPhone e-waste images.
                       \item Integrated \underline{ROS1} and \underline{Python} packages to track AprilTags using a \underline{Realsense camera} for localization of UR3 robotic arm.
@@ -164,8 +164,8 @@
             \resumeItemListStart
               \resumeItemWithoutTitle{Leading a multidisciplinary team of 30 students in engineering a rover, \underline{coordinating integration} efforts across mechanical, electrical, software, and bioscience teams. \myLink{tinyurl.com/roverimages}}
               \resumeItemWithoutTitle{Mentoring younger students in \underline{Onshape, KiCAD}, and general manufacturing processes through hands-on building.} 
-              \resumeItemWithoutTitle{Proposed and spearheaded the development of a prototype robotic hand utilizing pneumatics. \myLink{tinyurl.com/hydraarm}}
               \resumeItemWithoutTitle{Securing and \underline{managing over \$7,000 in funding} to support team development and future growth.}
+              \resumeItemWithoutTitle{Proposed and spearheaded the development of a prototype robotic hand utilizing pneumatics.}
             \resumeItemListEnd
 \vspace{4pt}
 %         \resumeSubheading
@@ -226,7 +226,7 @@
 %     {Developed an interactive “Space Invaders Bop-It” reflex game using a bare ATmega328P chip, integrating analog inputs, audio-visual feedback, and custom embedded logic for randomized commands and progressively challenging gameplay. \myLink{tinyurl.com/spacebopit}}
 % \vspace{3pt}
     \resumeSubItem{Micromouse Robot}
-    {Designed, assembled, and programmed a custom Micromouse robot through iterative \underline{PCB development}, integrating motor control, IMU, IR sensors, and a display system with \underline{low-level embedded programming}. Implemented PID control loops for navigation. Placed 3rd in competition at Stony Brook University IEEE conference. \myLink{tinyurl.com/goyalmm}}
+    {Designed, assembled, and programmed a custom Micromouse robot through iterative \underline{PCB development}, integrating motor control, IMU, IR sensors, and a display system with \underline{low-level embedded programming}. Implemented PID control loops for navigation. Placed 3rd in competition at Stony Brook University IEEE conference.}
 \vspace{3pt}
 %     \resumeSubItem{Trains Project (Systems and Software Engineering)}
 %     {\myLink{tinyurl.com/agtrain2025}}
@@ -235,7 +235,7 @@
 %     {Designed and prototyped an \underline{ESP32} based circuit with \underline{web interface} to measure home outlet voltage and report over Wi-Fi, collaborating with FirstEnergy engineers to enable early outage detection. \myLink{tinyurl.com/voltvitals}}
 % \vspace{3pt}
     \resumeSubItem{An Artistic take on Bipedal Robots}
-    {Created a bipedal robot using \underline{Onshape and Arduino} to carry a symbolic lantern given to all freshmen, reimagining a campus tradition through an artistic and technological lens. \myLink{tinyurl.com/gbipedal}}
+    {Created a bipedal robot using \underline{Onshape and Arduino} to carry a symbolic lantern given to all freshmen, reimagining a campus tradition through an artistic and technological lens.}
 \vspace{3pt}
 %     \resumeSubItem{Calico AI Event Curator (AI, Website Development)}
 %     {\myLink{tinyurl.com/steelcalicoai}}
@@ -247,7 +247,7 @@
 %     {Designed and fabricated a Walker-Cane Fusion to increase bathrooms accessibility for wheelchair users. Won first place at the Senior Design Expo. \myLink{tinyurl.com/CustomCane}}
 % \vspace{3pt}
     \resumeSubItem{Formula SAE E-Brake Bias}
-    {Developed a \underline{3D-printed} e-brake bias system for a Formula SAE racecar using \underline{Solidworks}, improving performance and usability; won the FSAE Innovation Award for implementation of the project. \myLink{tinyurl.com/ebrakeb}}
+    {Developed a \underline{3D-printed} e-brake bias system for a Formula SAE racecar using \underline{Solidworks}, improving performance and usability; won the FSAE Innovation Award for implementation of the project.}
 \vspace{3pt}
 %     \resumeSubItem{Formula SAE Low-Cost Slip Angle Sensor (OpenCV, Raspberry Pi)}
 %     {Worked to design and code prototypes of sensors which would allow for validation of slip angle using mouse sensors, digital cameras, and IMU's.}
@@ -273,9 +273,9 @@
 %-----------SKILLS AND AWARDS-----------------
 \section{Skills and Awards}
 	  \resumeSubHeadingListStart
-        \resumeSubItem{Software}{Linux, ROS1, ROS2, Github, Python, C++, C, MATLAB, ARM and RISC-V Assembly, Google Colab, OpenCV}
+        \resumeSubItem{Software}{Linux, ROS1, ROS2, Github, Python, C++, C, MATLAB, ARM and RISC-V Assembly, CANOpen, Google Colab}
         \resumeSubItem{Electrical}{KiCAD, LTSpice, Soldering, Arduino, ESP32}
-        \resumeSubItem{Mechanical}{Solidworks, Onshape, Milling, MIG Welding, Laser Cutting, General Shop Tools}
+        \resumeSubItem{Mechanical}{Solidworks, Onshape, Milling, Lathe, MIG Welding, Laser Cutting, General Shop Tools}
         \resumeSubItem{Awards}{SSOE Design Expo 1st place Art of Making, Micromouse Competition 3rd place, FSAE Innovation Award, Eagle Scout}
     \resumeSubHeadingListEnd
 \vspace{-5pt}

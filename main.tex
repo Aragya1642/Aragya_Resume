@@ -68,12 +68,11 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\educationSubheading}[6]{
+\newcommand{\educationSubheading}[5]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{#2} \\
-      \textit{#3}\textbf{#4} & \textit{#5} \\
-      \footnotesize{\textbf{Courses:} #6}
+      \textit{#3}\textbf{#4} & \textit{#5}
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -113,22 +112,15 @@
         \educationSubheading
             {University of Pittsburgh (Swanson School of Engineering/Frederick Honors Col.)}{Pittsburgh, PA}
             {B.S. - Computer Engineering (Autonomous Systems Focus); }{GPA: 3.99/4.00}{August 2022 - April 2026}
-            {Robotic Control, Data Structures and Algorithms, Embedded Processors, Microelectronics}
+        \vspace{-2pt}
+        \educationSubheading
+            {Spring-Ford Area High School}{Royersford, PA}
+            {High School Degree (Summa Cum Laude); }{GPA: 100.88/100.00}{August 2018 - June 2022}
       \resumeSubHeadingListEnd
 
 %-----------RESEARCH EXPERIENCE-----------------
 \section{Professional Experience}
     \resumeSubHeadingListStart
-        \resumeSubheading
-            {ESTAT Actuation}{Pittsburgh, PA}
-            {Robotics Developer Co-op}{May 2025 - Present}
-            \resumeItemListStart
-                \resumeItemWithoutTitle{Building and commissioning multiple robotic test stands \underline{expanding clutch testing capacity by 133\%}, covering mechanical assembly, electrical wiring, programming, and documentation for long-term use and potential sales to external customers.}
-                \resumeItemWithoutTitle{Directing the assembly and delivery of \underline{6 custom battery boxes} for the Suzuki Moqba robot at the Japan Mobility Show. Overseeing quality control, leading debugging efforts to resolve heating issues, and ensuring a professional final build.}
-                % \resumeItemWithoutTitle{Designing PCB for 3 different customer facing demos, making it easier to debug issues as they arrive.}
-                \resumeItemWithoutTitle{Testing new generation rotary clutch prototypes to improve reliability and evaluate longevity. Creating documentation explaining testing procedures, and using these prototypes to inform design decisions for next generation production clutches.}
-                % \resumeItemWithoutTitle{Developing a PCB for a lightweight electroadhesive exotendon system with potential applications in military and surgical uses.}
-            \resumeItemListEnd  
         \resumeSubheading
             {Carnegie Mellon University Robotics Institute}{Pittsburgh, PA}
             {Undergraduate Roboticist Researcher}{April 2023 -  Present}
@@ -137,8 +129,7 @@
                     \begin{itemize}
                       \item Assisting in the development of software architecture and the robotic controller implementation for a novel 4-wheeled rover with a unique passive steering mechanism.
                       \item Enabling low-level software development for the rover using \underline{ROS2} and \underline{C++} to interface with motor controllers and encoders via \underline{CANOpen} protocol.
-                      % \item Developed low-level software stack for the 2nd generation Zoë Rover set to conduct science in the Atacama Desert including \underline{CANopen} protocols via the \underline{ros\_canopen} package for \underline{ROS2} to communicate with encoders and motors.
-                      % \item Conducted motor and motor controller datasheet specifications validation via physical testing.
+                      \item Conducted motor and motor controller datasheet specifications validation via physical testing.
                     \end{itemize}
                 \resumeItem{Underwater Snake Robot}{\myLink{tinyurl.com/humrsCMU}}
                     \begin{itemize}
@@ -153,6 +144,15 @@
                       \item Manufactured custom AprilTags using lasercutters and sheet metal manufacturing methods.
                     \end{itemize}
             \resumeItemListEnd
+        \resumeSubheading
+            {ESTAT Actuation}{Pittsburgh, PA}
+            {Robotics Developer Co-op}{May 2025 - Present}
+            \resumeItemListStart
+                \resumeItemWithoutTitle{Building and commissioning multiple robotic test stands \underline{expanding clutch testing capacity by 133\%}, covering mechanical assembly, electrical wiring, programming, and documentation for long-term use and potential sales to external customers.}
+                \resumeItemWithoutTitle{Directing the assembly and delivery of \underline{6 custom battery boxes} for the Suzuki Moqba robot at the Japan Mobility Show. Overseeing quality control, leading debugging efforts to resolve heating issues, and ensuring a professional final build.}
+                \resumeItemWithoutTitle{Designing and assembling customer facing demos for prototype versions of encoder and clutch integrated products.}
+                \resumeItemWithoutTitle{Testing new generation rotary clutch prototypes to improve reliability and evaluate longevity. Creating documentation explaining testing procedures, and using these prototypes to inform design decisions for next generation production clutches.}
+            \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-5pt}
 
@@ -166,7 +166,7 @@
             \resumeItemListStart
               \resumeItemWithoutTitle{Leading a multidisciplinary team of 30 students in engineering a rover, \underline{coordinating integration} efforts across mechanical, electrical, software, and bioscience teams. \myLink{tinyurl.com/roverimages}}
               \resumeItemWithoutTitle{Mentoring younger students in \underline{Onshape, KiCAD}, and general manufacturing processes through hands-on building.} 
-              \resumeItemWithoutTitle{Securing and \underline{managing over \$7,000 in funding} to support team development and future growth.}
+              \resumeItemWithoutTitle{Securing and \underline{managing over \$7,000 in funding and sponsorships} to support team development and future growth.}
               \resumeItemWithoutTitle{Proposed and spearheaded the development of a prototype robotic hand utilizing pneumatics. \myLink{tinyurl.com/hydraarm}}
             \resumeItemListEnd
 \vspace{4pt}
@@ -177,32 +177,31 @@
 %               \resumeItemWithoutTitle{Selected as one of 30 leaders to mentor and guide a group of 20 incoming freshmen, facilitating their transition to university life through organized activities and support.}
 %             \resumeItemListEnd
 % \vspace{4pt}
-%         \resumeSubheading
-%             {Formula SAE - Panther Racing}{Pittsburgh, PA}
-%             {R\&D Engineer (Student Led Organization)}{August 2022 -  March 2024}
-%             \resumeItemListStart
-%                 \resumeItem{Project Course - Find Movie Similarity from Plot Summaries}
-%                     {Created project based course using Unsupervised learning and natural language processing.}
-%                 \resumeItem{Tutorial - Introduction to Reinforcement Learning}
-%                     {Created tutorial for Q-learning RL algorithm and  concepts.}
-%             \resumeItemListEnd
-% \vspace{4pt}
-%         \resumeSubheading
-%             {FIRST Robotics}{Exton, PA}
-%             {Team Captain/Design Lead (Student Led Organization)}{January 2020 -  June 2022}
-%             \resumeItemListStart
-%                 \item Led a team of 40 students and qualified for the Worlds level of competition, the highest win percentage since 2005, and a top 5\% ranking globally. \href{https://tinyurl.com/dewbot17}{(FIRST Link: https://tinyurl.com/dewbot17)}
-%                 \item Utilized Solidworks to design and develop competition and award-winning robots.
-%             \resumeItemListEnd
-% \vspace{4pt}
-%         \resumeSubheading
-%             {VEX Robotics}{Royersford, PA}
-%             {Team Captain (Student Led Organization)}{August 2018 -  June 2022}
-%             \resumeItemListStart
-%               \item Organized VEX robotics competition event for 60+ teams, hosted workshops to teach CAD to fellow club members, and received recognition for outstanding leadership. \href{https://bit.ly/3w7a6b1}{(VEX Link: https://bit.ly/3w7a6b1)}
-%               \item Qualified for the State's level of competition for all 4 years of high school.
-%             \resumeItemListEnd
-% \vspace{4pt}
+        \resumeSubheading
+            {Formula SAE - Panther Racing}{Pittsburgh, PA}
+            {R\&D Engineer}{August 2022 -  March 2024}
+            \resumeItemListStart
+                \item hello
+            \resumeItemListEnd
+\vspace{4pt}
+        \resumeSubheading
+            {FIRST Robotics}{Exton, PA}
+            {Team Captain/Design Lead}{January 2020 -  August 2022}
+            \resumeItemListStart
+                \item Led a team of 40 students and qualified for the Worlds level of competition, the highest win percentage since 2005, and a top 5\% ranking globally.
+                \item Utilized Solidworks to design and develop competition and award-winning robots.
+            \resumeItemListEnd
+\vspace{4pt}
+        \resumeSubheading
+            {Spring-Ford Technology Club (VEX Robotics)}{Royersford, PA}
+            {Vice President/Team Captain}{August 2018 -  June 2022}
+            \resumeItemListStart
+              \item Organized VEX robotics competition event for 60+ teams and received a scholarship for outstanding leadership within the club. \myLink{www.youtube.com/watch?v=iPC\_ZToDl7I}
+              \item Designed, built, and coded 3 robots during my time, qualifying for the state level of competition each year.
+              \item Maintained an engineering notebook to track engineering decisions and progress through each season.
+              \item Mentored freshmen students on robot design and manufacturing through workshops and hands-on building.
+            \resumeItemListEnd
+\vspace{4pt}
         % \resumeSubheading
         %     {FIRST and VEX Robotics}{Exton \& Royersford, PA}
         %     {Team Captain/Design Engineer}{August 2018 -  June 2022}

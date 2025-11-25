@@ -43,13 +43,13 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\Large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
+  \item{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
@@ -117,6 +117,23 @@
             {Spring-Ford Area High School}{Royersford, PA}
             {High School Degree (Summa Cum Laude); }{GPA: 100.88/100.00}{August 2018 - June 2022}
       \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+\resumeSubHeadingListStart
+  \item M. Nye, A. Raji, A. Saba, E. Erlich, R. Exley, \textbf{A. Goyal,} A. Matros, R. Misra, M. Sivaprakasam, M. Bertogna, D. Ramanan, and S. Scherer, \textbf{“BETTY Dataset: A Multi-modal Dataset for Full-Stack Autonomy,”} in Proc. IEEE Int. Conf. Robot. Autom. (ICRA), 2025. [Online]. Available: \myLink{arxiv.org/abs/2505.07266}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS AND AWARDS-----------------
+\section{Skills and Awards}
+	  \resumeSubHeadingListStart
+        \resumeSubItem{Software}{Linux, ROS1, ROS2, Github, Python, C++, C, MATLAB, ARM and RISC-V Assembly, CANOpen, Google Colab}
+        \resumeSubItem{Electrical}{Altium, KiCAD, LTSpice, Soldering, Arduino, ESP32}
+        \resumeSubItem{Mechanical}{Solidworks, Onshape, Milling, Lathe, MIG Welding, Laser Cutting, General Shop Tools}
+        \resumeSubItem{Awards}{Micromouse Competition 3rd place, SSOE Design Expo 1st place Art of Making, FSAE Innovation Award, FIRST Chairman's Award, FIRST Excellence in Engineering, FIRST Industrial Design Award, VEX Judges Award, Eagle Scout}
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
 
 %-----------RESEARCH EXPERIENCE-----------------
 \section{Professional Experience}
@@ -125,19 +142,19 @@
             {Carnegie Mellon University Robotics Institute}{Pittsburgh, PA}
             {Undergraduate Roboticist Researcher}{April 2023 -  Present}
             \resumeItemListStart
-                \resumeItem{ZOË 2 Rover}{}%\myLink{tinyurl.com/zoe2rover}}
+                \resumeItem{ZOË 2 Rover (Advisor: Dr. David Wettergreen)}{}%\myLink{tinyurl.com/zoe2rover}}
                     \begin{itemize}
                       \item Assisting in the development of software architecture and the robotic controller implementation for a novel 4-wheeled rover with a unique passive steering mechanism.
                       \item Enabling low-level software development for the rover using ROS2 and C++ to interface with motor controllers and encoders via CANOpen protocol.
                       \item Conducted motor and motor controller datasheet specifications validation via physical testing.
                     \end{itemize}
-                \resumeItem{Underwater Snake Robot}{\myLink{youtu.be/tGJvrKFQcpM}}
+                \resumeItem{Underwater Snake Robot (Advisor: Dr. Howie Choset)}{\myLink{youtu.be/tGJvrKFQcpM}}
                     \begin{itemize}
                       \item Implemented High-Frequency Injection methods in Brushless DC thrusters to achieve control at low/zero speeds thus reducing minimum speed by 80\% allowing for reduced oscillations in station-keeping control loops.
                       \item Deployed station-keeping feature using AprilTags, IMU readings, and Nested PID Controllers to perform robot state-estimation underwater.
                       \item Conducted major repairs on the buoyancy module of the robot and assisted in continual electrical/hardware maintenance.
                     \end{itemize}
-                \resumeItem{Apple's E-Waste Recycling Project}{\myLink{tinyurl.com/applecmu}}
+                \resumeItem{Apple's E-Waste Recycling Project (Advisor: Dr. Matthew Travers)}{\myLink{tinyurl.com/applecmu}}
                     \begin{itemize}
                       \item Labeled datasets consisting of 4000+ images for Machine Learning Models to detect screws in e-waste images.
                       \item Integrated ROS1 and Python packages to track AprilTags using a Realsense camera for localization of UR3 robotic arm.
@@ -154,12 +171,6 @@
                 \resumeItemWithoutTitle{Testing new generation rotary clutch prototypes to improve reliability and evaluate longevity. Creating documentation explaining testing procedures, and using these prototypes to inform design decisions for next generation production clutches.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
-
-%-----------PUBLICATIONS-----------------
-\section{Publications}
-\resumeSubHeadingListStart
-  \item M. Nye, A. Raji, A. Saba, E. Erlich, R. Exley, \textbf{A. Goyal,} A. Matros, R. Misra, M. Sivaprakasam, M. Bertogna, D. Ramanan, and S. Scherer, \textbf{“BETTY Dataset: A Multi-modal Dataset for Full-Stack Autonomy,”} in Proc. IEEE Int. Conf. Robot. Autom. (ICRA), 2025. [Online]. Available: \myLink{arxiv.org/abs/2505.07266}
-\resumeSubHeadingListEnd
 
 %-----------EXTRACURRICULARS-----------------
 \section{Leadership \& Activities}
@@ -256,16 +267,6 @@
   \resumeSubHeadingListEnd
 \vspace{-5pt}
 
-%-----------SKILLS AND AWARDS-----------------
-\section{Skills and Awards}
-	  \resumeSubHeadingListStart
-        \resumeSubItem{Software}{Linux, ROS1, ROS2, Github, Python, C++, C, MATLAB, ARM and RISC-V Assembly, CANOpen, Google Colab}
-        \resumeSubItem{Electrical}{Altium, KiCAD, LTSpice, Soldering, Arduino, ESP32}
-        \resumeSubItem{Mechanical}{Solidworks, Onshape, Milling, Lathe, MIG Welding, Laser Cutting, General Shop Tools}
-        \resumeSubItem{Awards}{Micromouse Competition 3rd place, SSOE Design Expo 1st place Art of Making, FSAE Innovation Award, FIRST Chairman's Award, FIRST Excellence in Engineering, FIRST Industrial Design Award, VEX Judges Award, Eagle Scout}
-    \resumeSubHeadingListEnd
-\vspace{-5pt}
-
 %-----------AWARDS-----------------
 % \section{Awards and Special Interests}
 % \resumeSubHeadingListStart
@@ -278,25 +279,25 @@
 % \vspace{-5pt}
 
 % -----------VOLUNTEER EXPERIENCE-----------------
-\section{Volunteer Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {American Red Cross}{Royersford, PA}
-      {Blood Donor Ambassador}{January 2019 - July 2022}
-      \resumeItemListStart
-        \resumeItemWithoutTitle{Managed donor check-in, scheduling, and post-donation care to ensure smooth operations and participant safety.}
-        \resumeItemWithoutTitle{Resolved donor concerns with professionalism and empathy, maintaining a positive atmosphere during high-volume blood drives.}
-        \resumeItemWithoutTitle{Initiated efforts to establish a Red Cross Club at Spring-Ford High School to expand youth involvement in community service.}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Boy Scouts of America}{Royersford, PA}
-      {Patrol Leader, Quartermaster, Historian}{Jan 2017 - August 2022}
-      \resumeItemListStart
-        \resumeItemWithoutTitle{Led and mentored scouts in organizing troop activities, managing equipment, and maintaining historical records.}
-        \resumeItemWithoutTitle{Planned and directed an Eagle Scout project at the Audubon Bird Sanctuary, coordinating volunteers to restore site infrastructure by repainting fences, guardrails, and small buildings, and replacing worn birdhouses.}
-        \resumeItemWithoutTitle{Earned the rank of Eagle Scout for demonstrating leadership, service, and community impact through sustained commitment to scouting.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-\vspace{-5pt}
+% \section{Volunteer Experience}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {American Red Cross}{Royersford, PA}
+%       {Blood Donor Ambassador}{January 2019 - July 2022}
+%       \resumeItemListStart
+%         \resumeItemWithoutTitle{Managed donor check-in, scheduling, and post-donation care to ensure smooth operations and participant safety.}
+%         \resumeItemWithoutTitle{Resolved donor concerns with professionalism and empathy, maintaining a positive atmosphere during high-volume blood drives.}
+%         \resumeItemWithoutTitle{Initiated efforts to establish a Red Cross Club at Spring-Ford High School to expand youth involvement in community service.}
+%       \resumeItemListEnd
+%     \resumeSubheading
+%       {Boy Scouts of America}{Royersford, PA}
+%       {Patrol Leader, Quartermaster, Historian}{Jan 2017 - August 2022}
+%       \resumeItemListStart
+%         \resumeItemWithoutTitle{Led and mentored scouts in organizing troop activities, managing equipment, and maintaining historical records.}
+%         \resumeItemWithoutTitle{Planned and directed an Eagle Scout project at the Audubon Bird Sanctuary, coordinating volunteers to restore site infrastructure by repainting fences, guardrails, and small buildings, and replacing worn birdhouses.}
+%         \resumeItemWithoutTitle{Earned the rank of Eagle Scout for demonstrating leadership, service, and community impact through sustained commitment to scouting.}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+% \vspace{-5pt}
 
 \end{document}
